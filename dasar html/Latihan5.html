@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input</title>
+</head>
+<body>
+    <form>
+        <label for="name">Nama :</label>
+        <input type="text" id="name"> 
+            <br>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+            <br>
+        <input type="radio" name="jeniskelamin" id="laki-laki"><label for="laki-laki">Laki-laki</label>
+        <input type="radio" name="jeniskelamin" id="perempuan"><label for="perempuan">Perempuan</label>
+            <br>
+        <input type="checkbox" id="waras"><label for="waras">waras</label>
+        <input type="checkbox" id="lumayan"><label for="lumayan">lumayan</label>
+        <input type="checkbox" id="gila"><label for="gila">gila</label>
+            <br>
+        <textarea></textarea>
+            <br>
+        <select>
+            <option>Tinggi</option>
+            <option>Pendek</option>
+            <option>Sedang</option>
+        </select>
+            <br>
+        <button type="submit">Kirim!</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br><br><br><br><br><br>
+    
+    <form>
+        <table border="2px" cellspacing="0" cellpadding="10px">
+            <tr>
+                <td><label for="name">Nama:</label></td>
+                <td><input type="text" id="name" placeholder="Masukkan nama"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" id="pass" placeholder="Masukkan Password"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="radio" name="j_klm" id="laki-laki"><label for="laki-laki">Laki-laki</label>
+                    <input type="radio" name="j_klm" id="perempuan"><label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="pil-1"><label for="pil-1">Pilihan 1</label>
+                    <input type="checkbox" id="pil-2"><label for="pil-2">Pilihan 2</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="multiple">pil ganda: </label></td>
+                <td><select>
+                    <option>jatim</option>
+                    <option>jabar</option>
+                    <option>jateng</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="txt">text area</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Kirim!</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
