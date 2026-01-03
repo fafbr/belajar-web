@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b, #556270);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: #000;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 400px;
+    padding: 20px;
+    border: 4px solid #1a1a1a;
+}
+
+.screen {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    overflow: hidden;
+    padding: 40px 20px 20px 20px;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.calc-button {
+    padding: 10px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.calc-button {
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 28px;
+    height: 75px;
+    width: 75px;
+    flex-basis: unset;
+    transition: filter 0.2s;
+}
+
+.calc-button:active {
+    filter: brightness(130%);
+}
+
+.calc-button:last-child {
+    background-color: #ff9f0a;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+.calc-button:last-child:active {
+    background-color: #e68e08;
+}
+
+.calc-button-row:first-child .calc-button {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+.calc-button-row:first-child .calc-button:last-child {
+    background-color: #ff9f0a;
+    color: #fff;
+}
+
+.triple {
+    width: 100%;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 30px;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.calc-button-row:last-child {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.calc-button-row:last-child .calc-button:last-child {
+    width: 75px;
+    flex-grow: 0;
+}
