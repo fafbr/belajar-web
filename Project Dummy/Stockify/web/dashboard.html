@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Stockify</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Stockify</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dasbor</a></li>
+                <li><a href="barang.html"><i class="fas fa-box"></i> Data Barang</a></li>
+                <li><a href="transaksi.html"><i class="fas fa-exchange"></i> Transaksi</a></li>
+                <li><a href="#" id="btn-logout" class="logout"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div>
+                    <h2>Ringkasan Dasbor</h2>
+                    <p id="jam-realtime" style="color: #8D96A6; font-size: 14px; margin-top: 10px;"></p>
+                </div>
+                <div><strong>Admin</strong></div>
+            </header>
+
+            <section class="content-area">
+                <div class="card-container">
+                    <div class="card"><h3>Total Barang</h3><p class="big-number">120</p></div>
+                    <div class="card"><h3>Masuk Hari Ini</h3><p class="big-number">5</p></div>
+                    <div class="card" style="border-bottom: 4px solid var(--warna-bahaya);">
+                        <h3>Stok Menipis</h3><p class="big-number" style="color: var(--warna-bahaya);">2</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

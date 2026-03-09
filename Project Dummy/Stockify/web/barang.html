@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Barang - Stockify</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Stockify</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dasbor</a></li>
+                <li><a href="barang.html" class="active"><i class="fas fa-box"></i> Data Barang</a></li>
+                <li><a href="transaksi.html"><i class="fas fa-exchange"></i> Transaksi</a></li>
+                <li><a href="#" id="btn-logout" class="logout"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Kelola Inventaris</h2>
+                <div><strong>Admin</strong></div>
+            </header>
+
+            <section class="content-area">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3>Daftar Barang</h3>
+                        <button id="btn-tambah-data" class="btn-utama" style="width: auto;"><i class="fas fa-plus"></i> Tambah</button>
+                    </div>
+                    <table class="data-table">
+                        <thead><tr><th>ID</th><th>Nama</th><th>Stok</th><th>Aksi</th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>BRG-001</td><td>Kabel UTP</td><td>120</td>
+                                <td><button class="btn-aksi btn-edit"><i class="fas fa-edit"></i></button><button class="btn-aksi btn-hapus"><i class="fas fa-trash"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal" id="form-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tambah Barang Baru</span>
+                <span id="btn-tutup-modal" class="tutup-modal"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="input-group"><label>Nama Barang</label><input type="text"></div>
+            <div class="input-group"><label>Kategori</label><input type="text"></div>
+            <button class="btn-utama">Simpan Data</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

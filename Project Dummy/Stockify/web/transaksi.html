@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Stockify</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-logo"><h2>Stockify</h2></div>
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-home"></i> Dasbor</a></li>
+                <li><a href="barang.html"><i class="fas fa-box"></i> Data Barang</a></li>
+                <li><a href="transaksi.html" class="active"><i class="fas fa-exchange-alt"></i> Transaksi</a></li>
+                <li><a href="#" id="btn-logout" class="logout"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h2>Catat Mutasi Barang</h2>
+                <div>Admin / Staf</div>
+            </header>
+
+            <section class="content-area">
+                <div class="card" style="max-width: 500px;">
+                    <form>
+                        <div class="input-group">
+                            <label>Pilih Barang</label>
+                            <select>
+                                <option>Kabel UTP</option>
+                                <option>Router</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Jenis Mutasi</label>
+                            <select>
+                                <option value="masuk">Barang Masuk</option>
+                                <option value="keluar">Barang Keluar</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Jumlah</label>
+                            <input type="number" min="1">
+                        </div>
+                        <button type="button" class="btn-utama">Simpan Transaksi</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
